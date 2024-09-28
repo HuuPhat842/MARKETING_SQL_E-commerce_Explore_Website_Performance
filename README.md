@@ -73,8 +73,8 @@ ORDER BY total_visits DESC;
 |yahoo	|100	|41	|41.0|
 |...|...|...|...|
 
-The table analyzes the sources of website traffic, including total visits, total number of bounces, and bounce rate from various sources.
-Optimize marketing strategies and improve user experience to reduce bounce rates, especially from sources with high bounce rates like Google and YouTube.
+The table analyzes the **sources of website traffic**, including total visits, total number of bounces, and bounce rate from various sources.
+Optimize marketing strategies and improve user experience to **reduce bounce rates**, especially from sources with high bounce rates like Google and YouTube.
 ## Query 3: Revenue by traffic source by week, by month in June 2017
 ```
 with 
@@ -129,7 +129,7 @@ select * from week_data;
 |Week	|201726	|groups.google.com	|63.37|
 |...|...|...|...|
 
-This table provides an overview of the revenue origins from different channels over periodic time frames. Revenue is primarily driven by direct sources and Google, with smaller but still significant contributions from other sources.
+This table provides an overview of the revenue origins from different channels over periodic time frames. Revenue is **primarily driven by direct sources and Google**, with smaller but still significant contributions from other sources.
 ## Query 04: Average number of pageviews by purchaser type (purchasers vs non-purchasers) in June, July 2017.
 ```
 with 
@@ -171,8 +171,8 @@ order by pd.month;
 |201706	|94.02050113895217	|316.86558846341671|
 |201707	|124.23755186721992	|334.05655979568053|
 
-The average pageviews for purchases increased from June to July, indicating that users who made purchases viewed more pages on average in July.
-The average pageviews for non-purchases also increased from June to July, suggesting that users who did not make purchases were viewing more pages as well.
+The average pageviews for purchases increased from June to July, indicating that **users who made purchases viewed more pages on average in July**.
+The average pageviews for non-purchases also increased from June to July, suggesting that **users who did not make purchases were viewing more pages as well**.
 ## Query 05: Average number of transactions per user that made a purchase in July 2017
 ```
 select
@@ -189,7 +189,7 @@ group by month;
 |-|-|
 |201707	|4.16390041493776|
 
-In July 2017, each user made an average of approximately 4.16 transactions
+In July 2017, each user made an **average of approximately 4.16 transactions**.
 ## Query 06: Average amount of money spent per session. Only include purchaser data in July 2017
 ```
 select
@@ -206,7 +206,7 @@ group by month;
 |-|-|
 |201707	|43.856598348051243|
 
-July 2017 had an average revenue per user per visit of 43.86. This insight can help the business evaluate and optimize marketing strategies to enhance engagement and conversion rates, turning visits into revenue more effectively.
+July 2017 had an average revenue per user per visit of 43.86. This insight can help the business **evaluate and optimize marketing strategies to enhance engagement and conversion rates, turning visits into revenue more effectively**.
 ## Query 07: Other products purchased by customers who purchased product "YouTube Men's Vintage Henley" in July 2017. Output should show product name and the quantity was ordered.
 ```
 with buyer_list as(
@@ -243,11 +243,11 @@ ORDER BY quantity DESC;
 |Android Wool Heather Cap Heather/Black	|2|
 |...|...|
 
-Google Sunglasses was the most frequently purchased product, with a quantity of 20. 
+**Google Sunglasses** was **the most frequently purchased product**, with a quantity of 20. 
 
-Google Women's Vintage Hero Tee Black and SPF-15 Slim & Slender Lip Balm were also popular, with quantities of 7 and 6 respectively.
+**Google Women's Vintage Hero Tee Black and SPF-15 Slim & Slender Lip Balm** were also **popular**, with quantities of 7 and 6 respectively.
 
-Various other products were purchased in smaller quantities, ranging from 4 to 1 units.
+Various **other products** were purchased in **smaller quantities**, ranging from 4 to 1 units.
 
 This suggests that customers who bought the YouTube Men's Vintage Henley in July 2017 also showed a diverse interest in other Google and YouTube merchandise, indicating potential cross-selling opportunities.
 ## Query 08: Calculate cohort map from product view to addtocart to purchase in Jan, Feb and March 2017. For example, 100% product view then 40% add_to_cart and 10% purchase. Add_to_cart_rate = number product  add to cart/number product view. Purchase_rate = number product purchase/number product view. The output should be calculated in product level.
@@ -307,5 +307,5 @@ order by pv.month;
 |201702	|21489	|7360	|2060	|34.25	|9.59|
 |201703	|23549	|8782	|2977	|37.29	|12.64|
 
-Overall, the data without August 2017 suggests a positive trend in user engagement and conversion rates, with significant increases in product views, items added to the cart, and purchases from January to July 2017. The exclusion of the incomplete data for August ensures the integrity and accuracy of these insights
+Overall, the data without August 2017 suggests a **positive trend in user engagement and conversion rates**, with **significant increases in product views, items added to the cart, and purchases** from January to July 2017. The exclusion of the incomplete data for August ensures the integrity and accuracy of these insights.
 
