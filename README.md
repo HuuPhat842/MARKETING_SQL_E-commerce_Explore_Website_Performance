@@ -1,6 +1,6 @@
 # SQL_E-Commerce-Dataset
 ## ABOUT:
-This project aims to **identify key patterns and trends** in the Google Merchandise Store, an e-commerce platform specializing in Google-branded products. We'll employ window functions, time formatting, and multiple common table expressions to clean and extract data that will inform our business analysis.
+This project aims to **identify key patterns and trends** in the Google Merchandise Store, an e-commerce platform specializing in Google-branded products. We'll employ **window functions, time formatting, and multiple common table expressions** to clean and extract data that will inform our business analysis.
 ## DATASET
 https://console.cloud.google.com/bigquery?ws=!1m5!1m4!4m3!1sbigquery-public-data!2sgoogle_analytics_sample!3sga_sessions_20170801
 | Field Name | Data Type | Description |
